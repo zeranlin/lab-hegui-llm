@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>政府采购招标文件合规审查-知识供给线内部说明</title>
+  <style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'PingFang SC','Noto Sans SC','Microsoft YaHei',Arial,sans-serif;background:#f8fafc;color:#0f172a;min-height:100vh;padding:2rem;overflow-x:hidden}
+.container{max-width:1560px;margin:0 auto}.header{margin-bottom:1.7rem}.header-row{display:flex;align-items:center;gap:1rem;margin-bottom:.6rem}
+.pulse-dot{width:12px;height:12px;background:#7c3aed;border-radius:50%;animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.42}}
+h1{font-size:1.95rem;font-weight:700;letter-spacing:0;color:#0f172a}.subtitle{color:#334155;font-size:1rem;line-height:1.75;margin-left:1.75rem;max-width:1340px}
+.diagram-container{background:rgba(255,255,255,.98);border:1px solid #cbd5e1;border-radius:1rem;padding:1.35rem;box-shadow:0 10px 30px rgba(15,23,42,.08);overflow-x:hidden}
+svg{width:100%;max-width:100%;display:block}.cards{display:grid;grid-template-columns:repeat(3,minmax(280px,1fr));gap:1rem;margin-top:1.25rem}
+.card{background:rgba(255,255,255,.98);border:1px solid #cbd5e1;border-radius:.75rem;padding:1.15rem 1.25rem;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+.card-header{display:flex;align-items:center;gap:.55rem;margin-bottom:.75rem}.card-dot{width:10px;height:10px;border-radius:999px}.cyan{background:#0284c7}.amber{background:#d97706}.violet{background:#7c3aed}.emerald{background:#059669}.rose{background:#e11d48}
+.card h3{font-size:.98rem;font-weight:700;color:#0f172a}.card ul{list-style:none;color:#334155;font-size:.86rem;line-height:1.82}.card li{margin-bottom:.32rem}
+.toolbar{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem;padding:.45rem .75rem;background:rgba(255,255,255,.72);border:1px dashed #cbd5e1;border-radius:.62rem;opacity:.75}
+.toolbar button{border:1px solid #cbd5e1;background:#fff;color:#334155;border-radius:.5rem;padding:.24rem .54rem;font:inherit;font-size:.72rem;cursor:pointer}.toolbar .hint{color:#64748b;font-size:.72rem}
+.editable-on .editable-surface{outline:2px dashed rgba(124,58,237,.24);outline-offset:3px;border-radius:.4rem}.svg-text-editing{cursor:text}
+.lane{font-size:17px;font-weight:700}.title{font-size:15px;font-weight:700}.line{font-size:10.5px;fill:#334155}.hintText{font-size:11px;fill:#64748b}.tag{font-size:11px;font-weight:700}.small{font-size:10px;fill:#334155}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="editable-surface" id="editableSurface">
+      <div class="header">
+        <div class="header-row"><div class="pulse-dot"></div><h1>政府采购招标文件合规审查-知识供给线内部说明</h1></div>
+        <p class="subtitle">本页用于解释知识供给线如何为外部执行主体准备可读取、可路由、可判断、可输出的政府采购招标文件合规审查知识。它把“什么算知识、从哪里来、如何分层、如何规则化、如何交给第4条线”拆成内部作业地图。</p>
+      </div>
+      <div class="diagram-container"><svg viewBox="0 0 1500 980" aria-label="知识供给线内部说明">
+<defs><marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#64748b"/></marker><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.8"/></pattern></defs>
+<rect width="100%" height="100%" fill="url(#grid)"/>
+<rect x="45" y="28" width="250" height="32" rx="16" fill="rgba(124,58,237,.08)" stroke="#7c3aed"/><text x="170.0" y="50" class="tag" text-anchor="middle" fill="#7c3aed">对象：政府采购审查知识</text>
+<rect x="315" y="28" width="290" height="32" rx="16" fill="rgba(14,165,233,.08)" stroke="#0284c7"/><text x="460.0" y="50" class="tag" text-anchor="middle" fill="#0284c7">来源：法规和招标文件</text>
+<rect x="625" y="28" width="270" height="32" rx="16" fill="rgba(245,158,11,.08)" stroke="#d97706"/><text x="760.0" y="50" class="tag" text-anchor="middle" fill="#d97706">方法：分层路由和规则化</text>
+<rect x="915" y="28" width="300" height="32" rx="16" fill="rgba(5,150,105,.08)" stroke="#059669"/><text x="1065.0" y="50" class="tag" text-anchor="middle" fill="#059669">产物：可执行知识</text>
+<rect x="40" y="88" width="330" height="690" rx="14" fill="rgba(124,58,237,.05)" stroke="#7c3aed" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="62" y="120" class="lane" fill="#7c3aed">一、知识定义和业务边界</text>
+<rect x="80" y="145" width="250" height="102" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="174" class="title" text-anchor="middle">什么算知识</text>
+<text x="205.0" y="199" class="line" text-anchor="middle">影响审查动作</text>
+<text x="205.0" y="218" class="line" text-anchor="middle">影响判断边界</text>
+<text x="205.0" y="237" class="line" text-anchor="middle">影响输出字段</text>
+<rect x="80" y="275" width="250" height="116" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="304" class="title" text-anchor="middle">政府采购边界</text>
+<text x="205.0" y="329" class="line" text-anchor="middle">采购文件是否合法</text>
+<text x="205.0" y="348" class="line" text-anchor="middle">资格、需求、评分、合同</text>
+<text x="205.0" y="367" class="line" text-anchor="middle">政策功能和程序条款</text>
+<rect x="80" y="430" width="250" height="118" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="459" class="title" text-anchor="middle">不应入库</text>
+<text x="205.0" y="484" class="line" text-anchor="middle">无依据经验</text>
+<text x="205.0" y="503" class="line" text-anchor="middle">单项目临时判断</text>
+<text x="205.0" y="522" class="line" text-anchor="middle">未隔离的标准答案</text>
+<rect x="80" y="585" width="250" height="106" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="614" class="title" text-anchor="middle">供给目标</text>
+<text x="205.0" y="639" class="line" text-anchor="middle">让执行器读懂</text>
+<text x="205.0" y="658" class="line" text-anchor="middle">能选择、能判断</text>
+<text x="205.0" y="677" class="line" text-anchor="middle">能输出和回写</text>
+<rect x="405" y="88" width="350" height="690" rx="14" fill="rgba(14,165,233,.05)" stroke="#0284c7" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="427" y="120" class="lane" fill="#0284c7">二、材料入库和事实抽取</text>
+<rect x="445" y="145" width="270" height="110" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="174" class="title" text-anchor="middle">原始材料</text>
+<text x="580.0" y="199" class="line" text-anchor="middle">raw 保持不可变</text>
+<text x="580.0" y="218" class="line" text-anchor="middle">法规、招标文件、附件</text>
+<text x="580.0" y="237" class="line" text-anchor="middle">抽取文本和来源笔记</text>
+<rect x="445" y="290" width="270" height="118" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="319" class="title" text-anchor="middle">事实抽取</text>
+<text x="580.0" y="344" class="line" text-anchor="middle">项目字段</text>
+<text x="580.0" y="363" class="line" text-anchor="middle">章节结构</text>
+<text x="580.0" y="382" class="line" text-anchor="middle">典型原文</text>
+<text x="580.0" y="401" class="line" text-anchor="middle">缺失事实</text>
+<rect x="445" y="450" width="270" height="118" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="479" class="title" text-anchor="middle">语料沉淀</text>
+<text x="580.0" y="504" class="line" text-anchor="middle">风险条款</text>
+<text x="580.0" y="523" class="line" text-anchor="middle">正常条款</text>
+<text x="580.0" y="542" class="line" text-anchor="middle">边界样本</text>
+<text x="580.0" y="561" class="line" text-anchor="middle">误报样本</text>
+<rect x="445" y="612" width="270" height="96" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="641" class="title" text-anchor="middle">项目记录</text>
+<text x="580.0" y="666" class="line" text-anchor="middle">审查记录只作样本</text>
+<text x="580.0" y="685" class="line" text-anchor="middle">不能直接当稳定知识</text>
+<rect x="790" y="88" width="350" height="690" rx="14" fill="rgba(245,158,11,.05)" stroke="#d97706" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="812" y="120" class="lane" fill="#d97706">三、知识分层和规则化</text>
+<rect x="830" y="145" width="270" height="116" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="174" class="title" text-anchor="middle">分层归位</text>
+<text x="965.0" y="199" class="line" text-anchor="middle">10法规、15行业</text>
+<text x="965.0" y="218" class="line" text-anchor="middle">20知识点、25审查点</text>
+<text x="965.0" y="237" class="line" text-anchor="middle">30风险库、70协议</text>
+<rect x="830" y="300" width="270" height="116" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="329" class="title" text-anchor="middle">规则化字段</text>
+<text x="965.0" y="354" class="line" text-anchor="middle">适用范围</text>
+<text x="965.0" y="373" class="line" text-anchor="middle">识别信号</text>
+<text x="965.0" y="392" class="line" text-anchor="middle">成立条件</text>
+<text x="965.0" y="411" class="line" text-anchor="middle">排除条件</text>
+<rect x="830" y="460" width="270" height="116" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="489" class="title" text-anchor="middle">元数据</text>
+<text x="965.0" y="514" class="line" text-anchor="middle">地域、方式、品目</text>
+<text x="965.0" y="533" class="line" text-anchor="middle">场景、章节、状态</text>
+<text x="965.0" y="552" class="line" text-anchor="middle">权限和复核要求</text>
+<rect x="830" y="620" width="270" height="92" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="649" class="title" text-anchor="middle">审查点化</text>
+<text x="965.0" y="674" class="line" text-anchor="middle">经验判断</text>
+<text x="965.0" y="693" class="line" text-anchor="middle">转成可执行规则</text>
+<rect x="1175" y="88" width="285" height="690" rx="14" fill="rgba(5,150,105,.05)" stroke="#059669" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="1197" y="120" class="lane" fill="#059669">四、交付外部执行线</text>
+<rect x="1215" y="145" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="174" class="title" text-anchor="middle">路由能力</text>
+<text x="1317.5" y="199" class="line" text-anchor="middle">全国到地方</text>
+<text x="1317.5" y="218" class="line" text-anchor="middle">方式到品类</text>
+<text x="1317.5" y="237" class="line" text-anchor="middle">场景到章节</text>
+<rect x="1215" y="300" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="329" class="title" text-anchor="middle">判断能力</text>
+<text x="1317.5" y="354" class="line" text-anchor="middle">原文信号</text>
+<text x="1317.5" y="373" class="line" text-anchor="middle">风险成立条件</text>
+<text x="1317.5" y="392" class="line" text-anchor="middle">排除误报条件</text>
+<rect x="1215" y="460" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="489" class="title" text-anchor="middle">输出能力</text>
+<text x="1317.5" y="514" class="line" text-anchor="middle">风险标题</text>
+<text x="1317.5" y="533" class="line" text-anchor="middle">原文内容</text>
+<text x="1317.5" y="552" class="line" text-anchor="middle">问题说明和建议</text>
+<rect x="1215" y="620" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="649" class="title" text-anchor="middle">指引影响</text>
+<text x="1317.5" y="674" class="line" text-anchor="middle">画像字段变化</text>
+<text x="1317.5" y="693" class="line" text-anchor="middle">动作协议变化</text>
+<text x="1317.5" y="712" class="line" text-anchor="middle">质量门模板变化</text>
+<line x1="330" y1="193" x2="445" y2="196" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="387.5" y="183" class="hintText" text-anchor="middle">材料进入画像</text>
+<line x1="715" y1="352" x2="830" y2="204" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="772.5" y="194" class="hintText" text-anchor="middle">加工成规则</text>
+<line x1="1100" y1="522" x2="1205" y2="203" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="1152.5" y="193" class="hintText" text-anchor="middle">交付第4条线</text>
+<rect x="60" y="815" width="1380" height="118" rx="14" fill="rgba(225,29,72,.055)" stroke="#e11d48" stroke-width="1.3"/>
+<text x="85" y="849" class="lane" fill="#e11d48">知识供给线完成标准</text>
+<rect x="100" y="870" width="170" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="185.0" y="894" class="small" text-anchor="middle">知识可路由</text>
+<rect x="290" y="870" width="170" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="375.0" y="894" class="small" text-anchor="middle">规则可判断</text>
+<rect x="480" y="870" width="170" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="565.0" y="894" class="small" text-anchor="middle">风险可输出</text>
+<rect x="670" y="870" width="170" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="755.0" y="894" class="small" text-anchor="middle">变化可评估</text>
+<rect x="860" y="870" width="170" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="945.0" y="894" class="small" text-anchor="middle">服务第4条线</text>
+<rect x="1050" y="870" width="210" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="1155.0" y="894" class="small" text-anchor="middle">原文和依据可追溯</text>
+</svg></div>
+      <div class="cards"><div class="card"><div class="card-header"><div class="card-dot violet"></div><h3>输入</h3></div><ul><li>法规政策、招标文件、项目审查记录、人工复盘。</li><li>原始文件保持不可变，知识在 wiki 中沉淀。</li></ul></div><div class="card"><div class="card-header"><div class="card-dot amber"></div><h3>处理</h3></div><ul><li>抽取事实、归类分层、写入元数据。</li><li>把经验判断转成风险审查点和动作协议。</li></ul></div><div class="card"><div class="card-header"><div class="card-dot emerald"></div><h3>输出</h3></div><ul><li>可路由知识、风险审查点、提示词、模板、质量门。</li><li>最终服务外部执行主体入口协议。</li></ul></div></div>
+    </div>
+    <div class="toolbar">
+      <button onclick="toggleEdit()">编辑</button>
+      <button onclick="savePage()">保存</button>
+      <button onclick="exportHtml()">导出</button>
+      <span class="hint">编辑模式可直接修改页面文字；双击 SVG 文字可编辑。</span>
+    </div>
+  </div>
+  <script>
+    const storageKey='政府采购招标文件合规审查-01-知识供给线内部说明.html';
+    function toggleEdit(){document.body.classList.toggle('editable-on');const on=document.body.classList.contains('editable-on');document.getElementById('editableSurface').contentEditable=on?'true':'false';document.querySelectorAll('svg text').forEach(t=>t.classList.toggle('svg-text-editing',on));}
+    function savePage(){localStorage.setItem(storageKey,document.documentElement.outerHTML);alert('已保存到当前浏览器本地状态');}
+    function exportHtml(){const blob=new Blob(['<!DOCTYPE html>\n'+document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='政府采购招标文件合规审查-01-知识供给线内部说明.html';a.click();URL.revokeObjectURL(a.href);}
+    document.querySelectorAll('svg text').forEach(t=>{t.addEventListener('dblclick',e=>{if(!document.body.classList.contains('editable-on'))return;e.stopPropagation();const old=t.textContent;const next=prompt('编辑文字',old);if(next!==null)t.textContent=next;});});
+  </script>
+</body>
+</html>

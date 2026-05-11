@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>政府采购招标文件合规审查-审查动作线内部说明</title>
+  <style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'PingFang SC','Noto Sans SC','Microsoft YaHei',Arial,sans-serif;background:#f8fafc;color:#0f172a;min-height:100vh;padding:2rem;overflow-x:hidden}
+.container{max-width:1560px;margin:0 auto}.header{margin-bottom:1.7rem}.header-row{display:flex;align-items:center;gap:1rem;margin-bottom:.6rem}
+.pulse-dot{width:12px;height:12px;background:#7c3aed;border-radius:50%;animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.42}}
+h1{font-size:1.95rem;font-weight:700;letter-spacing:0;color:#0f172a}.subtitle{color:#334155;font-size:1rem;line-height:1.75;margin-left:1.75rem;max-width:1340px}
+.diagram-container{background:rgba(255,255,255,.98);border:1px solid #cbd5e1;border-radius:1rem;padding:1.35rem;box-shadow:0 10px 30px rgba(15,23,42,.08);overflow-x:hidden}
+svg{width:100%;max-width:100%;display:block}.cards{display:grid;grid-template-columns:repeat(3,minmax(280px,1fr));gap:1rem;margin-top:1.25rem}
+.card{background:rgba(255,255,255,.98);border:1px solid #cbd5e1;border-radius:.75rem;padding:1.15rem 1.25rem;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+.card-header{display:flex;align-items:center;gap:.55rem;margin-bottom:.75rem}.card-dot{width:10px;height:10px;border-radius:999px}.cyan{background:#0284c7}.amber{background:#d97706}.violet{background:#7c3aed}.emerald{background:#059669}.rose{background:#e11d48}
+.card h3{font-size:.98rem;font-weight:700;color:#0f172a}.card ul{list-style:none;color:#334155;font-size:.86rem;line-height:1.82}.card li{margin-bottom:.32rem}
+.toolbar{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem;padding:.45rem .75rem;background:rgba(255,255,255,.72);border:1px dashed #cbd5e1;border-radius:.62rem;opacity:.75}
+.toolbar button{border:1px solid #cbd5e1;background:#fff;color:#334155;border-radius:.5rem;padding:.24rem .54rem;font:inherit;font-size:.72rem;cursor:pointer}.toolbar .hint{color:#64748b;font-size:.72rem}
+.editable-on .editable-surface{outline:2px dashed rgba(124,58,237,.24);outline-offset:3px;border-radius:.4rem}.svg-text-editing{cursor:text}
+.lane{font-size:17px;font-weight:700}.title{font-size:15px;font-weight:700}.line{font-size:10.5px;fill:#334155}.hintText{font-size:11px;fill:#64748b}.tag{font-size:11px;font-weight:700}.small{font-size:10px;fill:#334155}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="editable-surface" id="editableSurface">
+      <div class="header">
+        <div class="header-row"><div class="pulse-dot"></div><h1>政府采购招标文件合规审查-审查动作线内部说明</h1></div>
+        <p class="subtitle">本页用于解释审查动作线如何把知识供给线准备好的知识转成真实审查动作。它把“输入边界、文件画像、知识路由、动作清单、逐动作执行、风险原子化、质量门、双记录”拆成可复现的内部作业地图。</p>
+      </div>
+      <div class="diagram-container"><svg viewBox="0 0 1500 980" aria-label="审查动作线内部说明">
+<defs><marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#64748b"/></marker><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.8"/></pattern></defs>
+<rect width="100%" height="100%" fill="url(#grid)"/>
+<rect x="45" y="28" width="250" height="32" rx="16" fill="rgba(124,58,237,.08)" stroke="#7c3aed"/><text x="170.0" y="50" class="tag" text-anchor="middle" fill="#7c3aed">输入：政府采购文件</text>
+<rect x="315" y="28" width="290" height="32" rx="16" fill="rgba(14,165,233,.08)" stroke="#0284c7"/><text x="460.0" y="50" class="tag" text-anchor="middle" fill="#0284c7">方法：画像路由动作</text>
+<rect x="625" y="28" width="270" height="32" rx="16" fill="rgba(245,158,11,.08)" stroke="#d97706"/><text x="760.0" y="50" class="tag" text-anchor="middle" fill="#d97706">判断：存在型和缺失型</text>
+<rect x="915" y="28" width="300" height="32" rx="16" fill="rgba(5,150,105,.08)" stroke="#059669"/><text x="1065.0" y="50" class="tag" text-anchor="middle" fill="#059669">产物：双记录</text>
+<rect x="40" y="88" width="330" height="690" rx="14" fill="rgba(124,58,237,.05)" stroke="#7c3aed" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="62" y="120" class="lane" fill="#7c3aed">一、输入边界和审查口径</text>
+<rect x="80" y="145" width="250" height="112" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="174" class="title" text-anchor="middle">接收文件</text>
+<text x="205.0" y="199" class="line" text-anchor="middle">招标文件、公告</text>
+<text x="205.0" y="218" class="line" text-anchor="middle">采购需求、评分办法</text>
+<text x="205.0" y="237" class="line" text-anchor="middle">合同、格式和附件</text>
+<rect x="80" y="290" width="250" height="116" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="319" class="title" text-anchor="middle">审查口径</text>
+<text x="205.0" y="344" class="line" text-anchor="middle">只用本库知识</text>
+<text x="205.0" y="363" class="line" text-anchor="middle">不读取标准答案反推</text>
+<text x="205.0" y="382" class="line" text-anchor="middle">raw 原文不可改</text>
+<rect x="80" y="450" width="250" height="116" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="479" class="title" text-anchor="middle">可读性检查</text>
+<text x="205.0" y="504" class="line" text-anchor="middle">文本和表格可读</text>
+<text x="205.0" y="523" class="line" text-anchor="middle">章节是否完整</text>
+<text x="205.0" y="542" class="line" text-anchor="middle">缺失字段先标注</text>
+<rect x="80" y="610" width="250" height="96" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="639" class="title" text-anchor="middle">失败处理</text>
+<text x="205.0" y="664" class="line" text-anchor="middle">不可读就停止</text>
+<text x="205.0" y="683" class="line" text-anchor="middle">不得编造画像风险</text>
+<rect x="405" y="88" width="350" height="690" rx="14" fill="rgba(14,165,233,.05)" stroke="#0284c7" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="427" y="120" class="lane" fill="#0284c7">二、画像和知识路由</text>
+<rect x="445" y="145" width="270" height="110" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="174" class="title" text-anchor="middle">01-文件画像</text>
+<text x="580.0" y="199" class="line" text-anchor="middle">项目、采购人</text>
+<text x="580.0" y="218" class="line" text-anchor="middle">方式、预算、品目</text>
+<text x="580.0" y="237" class="line" text-anchor="middle">地域、场景、章节</text>
+<rect x="445" y="290" width="270" height="124" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="319" class="title" text-anchor="middle">02-知识路由</text>
+<text x="580.0" y="344" class="line" text-anchor="middle">全国通用规则</text>
+<text x="580.0" y="363" class="line" text-anchor="middle">地方规则</text>
+<text x="580.0" y="382" class="line" text-anchor="middle">方式、品目、场景</text>
+<text x="580.0" y="401" class="line" text-anchor="middle">风险审查点和模板</text>
+<rect x="445" y="460" width="270" height="116" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="489" class="title" text-anchor="middle">画像影响动作</text>
+<text x="580.0" y="514" class="line" text-anchor="middle">深圳路由地方规则</text>
+<text x="580.0" y="533" class="line" text-anchor="middle">物业路由动作协议</text>
+<text x="580.0" y="552" class="line" text-anchor="middle">缺失字段触发缺失风险</text>
+<rect x="445" y="620" width="270" height="92" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="649" class="title" text-anchor="middle">必须调用</text>
+<text x="580.0" y="674" class="line" text-anchor="middle">画像、路由、逐章矩阵</text>
+<text x="580.0" y="693" class="line" text-anchor="middle">审查协议和质量门</text>
+<rect x="790" y="88" width="350" height="690" rx="14" fill="rgba(245,158,11,.05)" stroke="#d97706" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="812" y="120" class="lane" fill="#d97706">三、动作执行和风险识别</text>
+<rect x="830" y="145" width="270" height="116" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="174" class="title" text-anchor="middle">03-动作清单</text>
+<text x="965.0" y="199" class="line" text-anchor="middle">动作ID和来源</text>
+<text x="965.0" y="218" class="line" text-anchor="middle">必读章节</text>
+<text x="965.0" y="237" class="line" text-anchor="middle">触发信号和排除条件</text>
+<rect x="830" y="300" width="270" height="116" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="329" class="title" text-anchor="middle">04-动作执行</text>
+<text x="965.0" y="354" class="line" text-anchor="middle">命中、未命中</text>
+<text x="965.0" y="373" class="line" text-anchor="middle">待确认、不适用</text>
+<text x="965.0" y="392" class="line" text-anchor="middle">记录已读范围</text>
+<rect x="830" y="460" width="270" height="116" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="489" class="title" text-anchor="middle">存在型风险</text>
+<text x="965.0" y="514" class="line" text-anchor="middle">人员证书</text>
+<text x="965.0" y="533" class="line" text-anchor="middle">认证业绩荣誉</text>
+<text x="965.0" y="552" class="line" text-anchor="middle">本地化和主观评分</text>
+<rect x="830" y="620" width="270" height="116" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="649" class="title" text-anchor="middle">缺失型风险</text>
+<text x="965.0" y="674" class="line" text-anchor="middle">预算和所属行业</text>
+<text x="965.0" y="693" class="line" text-anchor="middle">付款验收违约</text>
+<text x="965.0" y="712" class="line" text-anchor="middle">合同关键空白</text>
+<rect x="1175" y="88" width="285" height="690" rx="14" fill="rgba(5,150,105,.05)" stroke="#059669" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="1197" y="120" class="lane" fill="#059669">四、原子化、质检和输出</text>
+<rect x="1215" y="145" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="174" class="title" text-anchor="middle">05-原子风险</text>
+<text x="1317.5" y="199" class="line" text-anchor="middle">一事一风险</text>
+<text x="1317.5" y="218" class="line" text-anchor="middle">原文内容只放原文</text>
+<text x="1317.5" y="237" class="line" text-anchor="middle">问题说明写理由</text>
+<rect x="1215" y="300" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="329" class="title" text-anchor="middle">06-质量门</text>
+<text x="1317.5" y="354" class="line" text-anchor="middle">画像路由完整</text>
+<text x="1317.5" y="373" class="line" text-anchor="middle">动作全执行</text>
+<text x="1317.5" y="392" class="line" text-anchor="middle">证据和拆分反查</text>
+<rect x="1215" y="460" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="489" class="title" text-anchor="middle">07-AI审查记录</text>
+<text x="1317.5" y="514" class="line" text-anchor="middle">给业务人员阅读</text>
+<text x="1317.5" y="533" class="line" text-anchor="middle">风险逐条可整改</text>
+<text x="1317.5" y="552" class="line" text-anchor="middle">依据和建议清晰</text>
+<rect x="1215" y="620" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="649" class="title" text-anchor="middle">08-运行记录</text>
+<text x="1317.5" y="674" class="line" text-anchor="middle">证明知识调用</text>
+<text x="1317.5" y="693" class="line" text-anchor="middle">证明动作执行</text>
+<text x="1317.5" y="712" class="line" text-anchor="middle">证明质量门通过</text>
+<line x1="330" y1="193" x2="445" y2="196" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="387.5" y="183" class="hintText" text-anchor="middle">先画像</text>
+<line x1="715" y1="352" x2="830" y2="204" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="772.5" y="194" class="hintText" text-anchor="middle">再动作</text>
+<line x1="1100" y1="522" x2="1205" y2="203" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="1152.5" y="193" class="hintText" text-anchor="middle">质检输出</text>
+<rect x="60" y="815" width="1380" height="118" rx="14" fill="rgba(225,29,72,.055)" stroke="#e11d48" stroke-width="1.3"/>
+<text x="85" y="849" class="lane" fill="#e11d48">审查动作线完成标准</text>
+<rect x="100" y="870" width="160" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="180.0" y="894" class="small" text-anchor="middle">文件已画像</text>
+<rect x="280" y="870" width="160" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="360.0" y="894" class="small" text-anchor="middle">知识已路由</text>
+<rect x="460" y="870" width="160" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="540.0" y="894" class="small" text-anchor="middle">动作全执行</text>
+<rect x="640" y="870" width="170" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="725.0" y="894" class="small" text-anchor="middle">风险已原子化</text>
+<rect x="830" y="870" width="160" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="910.0" y="894" class="small" text-anchor="middle">质量门通过</text>
+<rect x="1010" y="870" width="160" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="1090.0" y="894" class="small" text-anchor="middle">双记录完整</text>
+<rect x="1190" y="870" width="170" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="1275.0" y="894" class="small" text-anchor="middle">未命中有说明</text>
+</svg></div>
+      <div class="cards"><div class="card"><div class="card-header"><div class="card-dot violet"></div><h3>输入</h3></div><ul><li>政府采购采购文件和抽取文本。</li><li>公告、需求、评分、合同、格式都要纳入。</li></ul></div><div class="card"><div class="card-header"><div class="card-dot amber"></div><h3>处理</h3></div><ul><li>先画像，再路由，再生成动作清单。</li><li>逐章逐动作读取，区分存在型和缺失型风险。</li></ul></div><div class="card"><div class="card-header"><div class="card-dot emerald"></div><h3>输出</h3></div><ul><li>AI审查记录给业务人员看。</li><li>运行记录证明执行过程可复现。</li></ul></div></div>
+    </div>
+    <div class="toolbar">
+      <button onclick="toggleEdit()">编辑</button>
+      <button onclick="savePage()">保存</button>
+      <button onclick="exportHtml()">导出</button>
+      <span class="hint">编辑模式可直接修改页面文字；双击 SVG 文字可编辑。</span>
+    </div>
+  </div>
+  <script>
+    const storageKey='政府采购招标文件合规审查-02-审查动作线内部说明.html';
+    function toggleEdit(){document.body.classList.toggle('editable-on');const on=document.body.classList.contains('editable-on');document.getElementById('editableSurface').contentEditable=on?'true':'false';document.querySelectorAll('svg text').forEach(t=>t.classList.toggle('svg-text-editing',on));}
+    function savePage(){localStorage.setItem(storageKey,document.documentElement.outerHTML);alert('已保存到当前浏览器本地状态');}
+    function exportHtml(){const blob=new Blob(['<!DOCTYPE html>\n'+document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='政府采购招标文件合规审查-02-审查动作线内部说明.html';a.click();URL.revokeObjectURL(a.href);}
+    document.querySelectorAll('svg text').forEach(t=>{t.addEventListener('dblclick',e=>{if(!document.body.classList.contains('editable-on'))return;e.stopPropagation();const old=t.textContent;const next=prompt('编辑文字',old);if(next!==null)t.textContent=next;});});
+  </script>
+</body>
+</html>

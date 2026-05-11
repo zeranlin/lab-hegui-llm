@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>政府采购招标文件合规审查-效果校准线内部说明</title>
+  <style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'PingFang SC','Noto Sans SC','Microsoft YaHei',Arial,sans-serif;background:#f8fafc;color:#0f172a;min-height:100vh;padding:2rem;overflow-x:hidden}
+.container{max-width:1560px;margin:0 auto}.header{margin-bottom:1.7rem}.header-row{display:flex;align-items:center;gap:1rem;margin-bottom:.6rem}
+.pulse-dot{width:12px;height:12px;background:#7c3aed;border-radius:50%;animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.42}}
+h1{font-size:1.95rem;font-weight:700;letter-spacing:0;color:#0f172a}.subtitle{color:#334155;font-size:1rem;line-height:1.75;margin-left:1.75rem;max-width:1340px}
+.diagram-container{background:rgba(255,255,255,.98);border:1px solid #cbd5e1;border-radius:1rem;padding:1.35rem;box-shadow:0 10px 30px rgba(15,23,42,.08);overflow-x:hidden}
+svg{width:100%;max-width:100%;display:block}.cards{display:grid;grid-template-columns:repeat(3,minmax(280px,1fr));gap:1rem;margin-top:1.25rem}
+.card{background:rgba(255,255,255,.98);border:1px solid #cbd5e1;border-radius:.75rem;padding:1.15rem 1.25rem;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+.card-header{display:flex;align-items:center;gap:.55rem;margin-bottom:.75rem}.card-dot{width:10px;height:10px;border-radius:999px}.cyan{background:#0284c7}.amber{background:#d97706}.violet{background:#7c3aed}.emerald{background:#059669}.rose{background:#e11d48}
+.card h3{font-size:.98rem;font-weight:700;color:#0f172a}.card ul{list-style:none;color:#334155;font-size:.86rem;line-height:1.82}.card li{margin-bottom:.32rem}
+.toolbar{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem;padding:.45rem .75rem;background:rgba(255,255,255,.72);border:1px dashed #cbd5e1;border-radius:.62rem;opacity:.75}
+.toolbar button{border:1px solid #cbd5e1;background:#fff;color:#334155;border-radius:.5rem;padding:.24rem .54rem;font:inherit;font-size:.72rem;cursor:pointer}.toolbar .hint{color:#64748b;font-size:.72rem}
+.editable-on .editable-surface{outline:2px dashed rgba(124,58,237,.24);outline-offset:3px;border-radius:.4rem}.svg-text-editing{cursor:text}
+.lane{font-size:17px;font-weight:700}.title{font-size:15px;font-weight:700}.line{font-size:10.5px;fill:#334155}.hintText{font-size:11px;fill:#64748b}.tag{font-size:11px;font-weight:700}.small{font-size:10px;fill:#334155}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="editable-surface" id="editableSurface">
+      <div class="header">
+        <div class="header-row"><div class="pulse-dot"></div><h1>政府采购招标文件合规审查-效果校准线内部说明</h1></div>
+        <p class="subtitle">本页用于解释效果校准线如何把业务人员对 AI 审查结果的调整转成可复用知识。它把“人工调整、漏报误报复盘、知识更新申请、回写位置、指引影响、复跑验证”拆成持续提升第4条线的内部作业地图。</p>
+      </div>
+      <div class="diagram-container"><svg viewBox="0 0 1500 980" aria-label="效果校准线内部说明">
+<defs><marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#64748b"/></marker><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.8"/></pattern></defs>
+<rect width="100%" height="100%" fill="url(#grid)"/>
+<rect x="45" y="28" width="250" height="32" rx="16" fill="rgba(124,58,237,.08)" stroke="#7c3aed"/><text x="170.0" y="50" class="tag" text-anchor="middle" fill="#7c3aed">输入：人工调整</text>
+<rect x="315" y="28" width="290" height="32" rx="16" fill="rgba(14,165,233,.08)" stroke="#0284c7"/><text x="460.0" y="50" class="tag" text-anchor="middle" fill="#0284c7">方法：漏报误报归因</text>
+<rect x="625" y="28" width="270" height="32" rx="16" fill="rgba(245,158,11,.08)" stroke="#d97706"/><text x="760.0" y="50" class="tag" text-anchor="middle" fill="#d97706">产物：知识更新申请</text>
+<rect x="915" y="28" width="300" height="32" rx="16" fill="rgba(5,150,105,.08)" stroke="#059669"/><text x="1065.0" y="50" class="tag" text-anchor="middle" fill="#059669">目标：第4条线更准</text>
+<rect x="40" y="88" width="330" height="690" rx="14" fill="rgba(124,58,237,.05)" stroke="#7c3aed" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="62" y="120" class="lane" fill="#7c3aed">一、调整入口和边界隔离</text>
+<rect x="80" y="145" width="250" height="112" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="174" class="title" text-anchor="middle">AI审查结果</text>
+<text x="205.0" y="199" class="line" text-anchor="middle">风险点清单</text>
+<text x="205.0" y="218" class="line" text-anchor="middle">原文证据</text>
+<text x="205.0" y="237" class="line" text-anchor="middle">问题说明和建议</text>
+<rect x="80" y="290" width="250" height="116" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="319" class="title" text-anchor="middle">人工调整</text>
+<text x="205.0" y="344" class="line" text-anchor="middle">确认、驳回、补充</text>
+<text x="205.0" y="363" class="line" text-anchor="middle">降级、升级、拆分</text>
+<text x="205.0" y="382" class="line" text-anchor="middle">改依据、改建议</text>
+<rect x="80" y="450" width="250" height="116" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="479" class="title" text-anchor="middle">边界隔离</text>
+<text x="205.0" y="504" class="line" text-anchor="middle">不覆盖AI记录</text>
+<text x="205.0" y="523" class="line" text-anchor="middle">标准答案只做复盘</text>
+<text x="205.0" y="542" class="line" text-anchor="middle">不直接污染稳定知识</text>
+<rect x="80" y="610" width="250" height="96" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="205.0" y="639" class="title" text-anchor="middle">记录要求</text>
+<text x="205.0" y="664" class="line" text-anchor="middle">调整类型</text>
+<text x="205.0" y="683" class="line" text-anchor="middle">调整理由</text>
+<text x="205.0" y="702" class="line" text-anchor="middle">是否影响知识库</text>
+<rect x="405" y="88" width="350" height="690" rx="14" fill="rgba(14,165,233,.05)" stroke="#0284c7" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="427" y="120" class="lane" fill="#0284c7">二、漏报误报复盘归因</text>
+<rect x="445" y="145" width="270" height="116" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="174" class="title" text-anchor="middle">漏报归因</text>
+<text x="580.0" y="199" class="line" text-anchor="middle">画像缺失</text>
+<text x="580.0" y="218" class="line" text-anchor="middle">路由缺失</text>
+<text x="580.0" y="237" class="line" text-anchor="middle">动作缺失和原文漏读</text>
+<rect x="445" y="300" width="270" height="116" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="329" class="title" text-anchor="middle">误报归因</text>
+<text x="580.0" y="354" class="line" text-anchor="middle">排除条件不足</text>
+<text x="580.0" y="373" class="line" text-anchor="middle">地域或场景误用</text>
+<text x="580.0" y="392" class="line" text-anchor="middle">证据不足和等级偏高</text>
+<rect x="445" y="460" width="270" height="116" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="489" class="title" text-anchor="middle">拆分问题</text>
+<text x="580.0" y="514" class="line" text-anchor="middle">应拆未拆</text>
+<text x="580.0" y="533" class="line" text-anchor="middle">应合未合</text>
+<text x="580.0" y="552" class="line" text-anchor="middle">大风险掩盖小风险</text>
+<rect x="445" y="620" width="270" height="116" rx="10" fill="#fff" stroke="#0284c7" stroke-width="1.4"/>
+<text x="580.0" y="649" class="title" text-anchor="middle">字段问题</text>
+<text x="580.0" y="674" class="line" text-anchor="middle">原文混入解释</text>
+<text x="580.0" y="693" class="line" text-anchor="middle">标题不准</text>
+<text x="580.0" y="712" class="line" text-anchor="middle">建议不可执行</text>
+<rect x="790" y="88" width="350" height="690" rx="14" fill="rgba(245,158,11,.05)" stroke="#d97706" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="812" y="120" class="lane" fill="#d97706">三、知识更新和回写</text>
+<rect x="830" y="145" width="270" height="116" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="174" class="title" text-anchor="middle">更新申请</text>
+<text x="965.0" y="199" class="line" text-anchor="middle">来源项目</text>
+<text x="965.0" y="218" class="line" text-anchor="middle">原文证据</text>
+<text x="965.0" y="237" class="line" text-anchor="middle">复盘结论和影响类型</text>
+<rect x="830" y="300" width="270" height="116" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="329" class="title" text-anchor="middle">回写位置</text>
+<text x="965.0" y="354" class="line" text-anchor="middle">画像、路由</text>
+<text x="965.0" y="373" class="line" text-anchor="middle">风险审查点</text>
+<text x="965.0" y="392" class="line" text-anchor="middle">动作协议、质量门、模板</text>
+<rect x="830" y="460" width="270" height="116" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="489" class="title" text-anchor="middle">可复用判断</text>
+<text x="965.0" y="514" class="line" text-anchor="middle">影响后续同类文件</text>
+<text x="965.0" y="533" class="line" text-anchor="middle">能降低漏报误报</text>
+<text x="965.0" y="552" class="line" text-anchor="middle">有原文和规则支撑</text>
+<rect x="830" y="620" width="270" height="116" rx="10" fill="#fff" stroke="#d97706" stroke-width="1.4"/>
+<text x="965.0" y="649" class="title" text-anchor="middle">状态治理</text>
+<text x="965.0" y="674" class="line" text-anchor="middle">草稿、待复核</text>
+<text x="965.0" y="693" class="line" text-anchor="middle">试运行、有效</text>
+<text x="965.0" y="712" class="line" text-anchor="middle">地域待核和冲突</text>
+<rect x="1175" y="88" width="285" height="690" rx="14" fill="rgba(5,150,105,.05)" stroke="#059669" stroke-width="1.3" stroke-dasharray="8,4"/>
+<text x="1197" y="120" class="lane" fill="#059669">四、影响第4条线和验证</text>
+<rect x="1215" y="145" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="174" class="title" text-anchor="middle">指引影响</text>
+<text x="1317.5" y="199" class="line" text-anchor="middle">是否影响入口协议</text>
+<text x="1317.5" y="218" class="line" text-anchor="middle">是否影响中间产物</text>
+<text x="1317.5" y="237" class="line" text-anchor="middle">是否影响初始化标准</text>
+<rect x="1215" y="300" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="329" class="title" text-anchor="middle">复跑验证</text>
+<text x="1317.5" y="354" class="line" text-anchor="middle">同类文件复跑</text>
+<text x="1317.5" y="373" class="line" text-anchor="middle">动作清单变化</text>
+<text x="1317.5" y="392" class="line" text-anchor="middle">风险质量对比</text>
+<rect x="1215" y="460" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="489" class="title" text-anchor="middle">质量门补强</text>
+<text x="1317.5" y="514" class="line" text-anchor="middle">漏项反查</text>
+<text x="1317.5" y="533" class="line" text-anchor="middle">异常低风险反查</text>
+<text x="1317.5" y="552" class="line" text-anchor="middle">原子化反查</text>
+<rect x="1215" y="620" width="205" height="116" rx="10" fill="#fff" stroke="#059669" stroke-width="1.4"/>
+<text x="1317.5" y="649" class="title" text-anchor="middle">闭环结果</text>
+<text x="1317.5" y="674" class="line" text-anchor="middle">减少漏报误报</text>
+<text x="1317.5" y="693" class="line" text-anchor="middle">更新必读知识</text>
+<text x="1317.5" y="712" class="line" text-anchor="middle">提升外部执行效果</text>
+<line x1="330" y1="193" x2="445" y2="196" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="387.5" y="183" class="hintText" text-anchor="middle">进入复盘</text>
+<line x1="715" y1="352" x2="830" y2="204" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="772.5" y="194" class="hintText" text-anchor="middle">申请回写</text>
+<line x1="1100" y1="522" x2="1205" y2="203" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="1152.5" y="193" class="hintText" text-anchor="middle">验证提升</text>
+<rect x="60" y="815" width="1380" height="118" rx="14" fill="rgba(225,29,72,.055)" stroke="#e11d48" stroke-width="1.3"/>
+<text x="85" y="849" class="lane" fill="#e11d48">效果校准线完成标准</text>
+<rect x="100" y="870" width="160" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="180.0" y="894" class="small" text-anchor="middle">调整已记录</text>
+<rect x="280" y="870" width="160" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="360.0" y="894" class="small" text-anchor="middle">漏报已归因</text>
+<rect x="460" y="870" width="160" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="540.0" y="894" class="small" text-anchor="middle">误报已归因</text>
+<rect x="640" y="870" width="170" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="725.0" y="894" class="small" text-anchor="middle">更新有申请</text>
+<rect x="830" y="870" width="180" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="920.0" y="894" class="small" text-anchor="middle">回写位置明确</text>
+<rect x="1030" y="870" width="200" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="1130.0" y="894" class="small" text-anchor="middle">指引影响已评估</text>
+<rect x="1250" y="870" width="160" height="38" rx="8" fill="#fff" stroke="#e11d48"/>
+<text x="1330.0" y="894" class="small" text-anchor="middle">复跑已验证</text>
+</svg></div>
+      <div class="cards"><div class="card"><div class="card-header"><div class="card-dot violet"></div><h3>输入</h3></div><ul><li>AI审查记录、运行记录、业务人员调整意见。</li><li>外部标注只能作为复盘参考。</li></ul></div><div class="card"><div class="card-header"><div class="card-dot amber"></div><h3>处理</h3></div><ul><li>按漏报、误报、拆分、依据、字段和模板问题归因。</li><li>判断项目个案还是可复用知识。</li></ul></div><div class="card"><div class="card-header"><div class="card-dot emerald"></div><h3>输出</h3></div><ul><li>人工调整复盘、知识更新申请、回写后的知识页。</li><li>必要时同步外部执行主体指引。</li></ul></div></div>
+    </div>
+    <div class="toolbar">
+      <button onclick="toggleEdit()">编辑</button>
+      <button onclick="savePage()">保存</button>
+      <button onclick="exportHtml()">导出</button>
+      <span class="hint">编辑模式可直接修改页面文字；双击 SVG 文字可编辑。</span>
+    </div>
+  </div>
+  <script>
+    const storageKey='政府采购招标文件合规审查-03-效果校准线内部说明.html';
+    function toggleEdit(){document.body.classList.toggle('editable-on');const on=document.body.classList.contains('editable-on');document.getElementById('editableSurface').contentEditable=on?'true':'false';document.querySelectorAll('svg text').forEach(t=>t.classList.toggle('svg-text-editing',on));}
+    function savePage(){localStorage.setItem(storageKey,document.documentElement.outerHTML);alert('已保存到当前浏览器本地状态');}
+    function exportHtml(){const blob=new Blob(['<!DOCTYPE html>\n'+document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='政府采购招标文件合规审查-03-效果校准线内部说明.html';a.click();URL.revokeObjectURL(a.href);}
+    document.querySelectorAll('svg text').forEach(t=>{t.addEventListener('dblclick',e=>{if(!document.body.classList.contains('editable-on'))return;e.stopPropagation();const old=t.textContent;const next=prompt('编辑文字',old);if(next!==null)t.textContent=next;});});
+  </script>
+</body>
+</html>
