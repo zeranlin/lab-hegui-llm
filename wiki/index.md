@@ -10,9 +10,16 @@
 - [[wiki/00-入口/LLM-Wiki工作法]] - 本地 LLM Wiki 维护工作法说明。
 - [[wiki/00-入口/动作型知识系统建设纲领]] - 将知识加工成可由 AI 调度执行的政府采购行业招标文件审查动作型知识系统建设纲领。
 - [[wiki/00-入口/从0到1搭建政府采购行业专题知识包]] - 面向新人和知识维护人的政府采购行业专题知识包从零构建方法论。
+- [政府采购招标文件合规审查知识系统从0到1介绍](</Users/linzeran/code/2026-zn/compliance-lab/lab-hegui-llm/wiki/00-入口/架构图/政府采购招标文件合规审查知识系统-从0到1介绍.html>) - 说明本知识库为什么是政府采购招标文件合规性审查知识、具体包含什么内容，以及如何从 0 到 1 构建。
+- [知识生成管理线架构图](</Users/linzeran/code/2026-zn/compliance-lab/lab-hegui-llm/wiki/00-入口/架构图/政府采购招标文件合规审查-01-知识生成管理线.html>) - 政府采购招标文件合规审查知识生成管理线 architecture-diagram-gov-light HTML 架构图。
+- [业务审查主流程线架构图](</Users/linzeran/code/2026-zn/compliance-lab/lab-hegui-llm/wiki/00-入口/架构图/政府采购招标文件合规审查-02-业务审查主流程线.html>) - 政府采购招标文件合规审查业务审查主流程线 architecture-diagram-gov-light HTML 架构图。
+- [审后调整和精确率提升线架构图](</Users/linzeran/code/2026-zn/compliance-lab/lab-hegui-llm/wiki/00-入口/架构图/政府采购招标文件合规审查-03-审后调整和精确率提升线.html>) - 政府采购招标文件合规审查审后调整和精确率提升线 architecture-diagram-gov-light HTML 架构图。
+- [外部执行主体使用线架构图](</Users/linzeran/code/2026-zn/compliance-lab/lab-hegui-llm/wiki/00-入口/架构图/政府采购招标文件合规审查-04-外部执行主体使用线.html>) - 政府采购招标文件合规审查外部执行主体使用线 architecture-diagram-gov-light HTML 架构图。
 - [[wiki/00-入口/审查流程]] - 招标文件合规审查流程。
 - [[wiki/00-入口/审查动作系统]] - 从文件画像到逐章审查、风险归类和审后复盘的动作系统。
 - [[wiki/00-入口/外部执行主体招标文件审查指引]] - 面向外部 AI Agent、自动化执行器和人工审查助理的招标文件风险审查操作入口。
+- [[wiki/00-入口/外部执行主体使用线内部说明]] - 解释外部执行主体使用线的入口协议、知识读取、画像、路由、动作执行、中间产物、质量门和报告输出细节。
+- [外部执行主体使用线内部说明 HTML](</Users/linzeran/code/2026-zn/compliance-lab/lab-hegui-llm/wiki/00-入口/架构图/政府采购招标文件合规审查-05-外部执行主体使用线内部说明.html>) - 用 architecture-diagram-gov-light 展示外部执行主体如何读取知识并执行政府采购招标文件审查。
 - [[wiki/00-入口/四线闭环知识系统设计]] - 知识生成管理、业务审查主流程、审后精确率提升和外部执行主体使用的四线闭环设计。
 - [[wiki/00-入口/知识地图]] - 法规、知识点和风险的领域地图。
 
